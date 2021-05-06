@@ -55,6 +55,9 @@ namespace GwinstekLCRController
 
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+         
             char[,] grid = new char[5, 5] {
                 {'@', '.', '.', '.', '.'},
                 {'.', '.', '.', '.', '.'},
