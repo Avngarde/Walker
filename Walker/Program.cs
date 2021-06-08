@@ -18,6 +18,17 @@ namespace GwinstekLCRController
             } 
         }
 
+        static char[,] createGrid(int x, int y) {
+            char[,] grid = new char[x, y];
+            for (int gridYIdx = 0; gridYIdx < y; gridYIdx++) {
+                for (int gridXIdx = 0; gridXIdx < x; gridXIdx++) {
+                    grid[gridXIdx, gridYIdx] = '.';
+                }
+            }
+
+            return grid;
+        }
+
         static char[,] redrawGrid(char[,] grid, int currentX, int currentY, char changedParam, string ascOrDesc)
         {
             grid[currentX, currentY] = '.';
@@ -54,10 +65,7 @@ namespace GwinstekLCRController
         }
 
         static void Main()
-        {
-            Console.BackgroundColor = ConsoleColor.DarkCyan;
-            Console.ForegroundColor = ConsoleColor.Yellow;
-         
+        {         
             char[,] grid = new char[5, 5] {
                 {'@', '.', '.', '.', '.'},
                 {'.', '.', '.', '.', '.'},
