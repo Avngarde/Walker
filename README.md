@@ -1,2 +1,2 @@
 # Walker
-I was bored at my job
+A simple terminal app where you can walk on a 4x4 grid
