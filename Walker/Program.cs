@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GwinstekLCRController
+namespace Walker
 {
     class Program
     {
